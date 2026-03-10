@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Bai 7.1 - OrderProcessor Suite" verbose="1">
+    <test name="OrderProcessor Tests">
+        <classes>
+            <class name="bai71.OrderProcessorTest"/>
+        </classes>
+    </test>
+</suite>
+

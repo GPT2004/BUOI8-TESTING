@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  OrderProcessor Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OrderProcessor Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 16:29:19 GMT+07:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (513 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testMcdc_ATrue_BTrue_CFalse()'><b>testMcdc_ATrue_BTrue_CFalse</b><br>Test class: bai72.OrderProcessorTest<br>Test method: MC/DC - A=T, B=T, C=F (coupon=SALE20) -> khong ap dung SALE10, ap dung giam 20%</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testMemberGold_DiscountAndShipCOD()'><b>testMemberGold_DiscountAndShipCOD</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP6 - Member GOLD, khong coupon, ship COD (<500k)</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testNoDiscount_OnlineShipping()'><b>testNoDiscount_OnlineShipping</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP8 - Khong coupon, khong member, ship ONLINE (<500k)</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testMcdc_ATrue_BFalse_CTrue()'><b>testMcdc_ATrue_BFalse_CTrue</b><br>Test class: bai72.OrderProcessorTest<br>Test method: MC/DC - A=T, B=F, C=T (coupon="") -> khong ap dung SALE10</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testSale20_NoMember_ShipOnline()'><b>testSale20_NoMember_ShipOnline</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP4 - Coupon SALE20, khong member, ship online (<500k)</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testSale10_NoMember_ShipCOD()'><b>testSale10_NoMember_ShipCOD</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP3 - Coupon SALE10, khong member, ship COD (<500k)</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testNoCoupon_NoMember_TotalOverThreshold_NoShippingFee()'><b>testNoCoupon_NoMember_TotalOverThreshold_NoShippingFee</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP2 - Khong coupon, khong member, tong >= 500k, khong phi ship</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testMcdc_AFalse_BTrue_CTrue()'><b>testMcdc_AFalse_BTrue_CTrue</b><br>Test class: bai72.OrderProcessorTest<br>Test method: MC/DC - A=F, B=T, C=T (coupon=null) -> khong ap dung SALE10</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testPlatinum_WithSale10_HasOnlineShipping()'><b>testPlatinum_WithSale10_HasOnlineShipping</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP7 - Member PLATINUM, co coupon SALE10, tong sau giam < 500k, van tinh phi ship ONLINE</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testMcdc_ATrue_BTrue_CTrue()'><b>testMcdc_ATrue_BTrue_CTrue</b><br>Test class: bai72.OrderProcessorTest<br>Test method: MC/DC - A=T, B=T, C=T (coupon=SALE10) -> ap dung giam 10%</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testNoDiscount_CodShipping()'><b>testNoDiscount_CodShipping</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP9 - Khong coupon, khong member, ship COD (<500k)</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testEmptyCart_ThrowsException()'><b>testEmptyCart_ThrowsException</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP1 - Gio hang null/empty -> throw exception</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+<tr>
+<td title='bai72.OrderProcessorTest.testInvalidCoupon_ThrowsException()'><b>testInvalidCoupon_ThrowsException</b><br>Test class: bai72.OrderProcessorTest<br>Test method: BP5 - Coupon khong hop le -> throw exception</td>
+<td></td>
+<td>0</td>
+<td>bai72.OrderProcessorTest@390877d2</td></tr>
+</table><p>
+</body>
+</html>

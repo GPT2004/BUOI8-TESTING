@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T16:15:10 GMT+07:00" name="Bai 7.1 - OrderProcessor Suite" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="273">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T16:15:10 GMT+07:00" name="OrderProcessor Tests" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="273">
+      <class name="bai71.OrderProcessorTest">
+        <test-method signature="testEmptyCart_ThrowsException()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testEmptyCart_ThrowsException" description="BP1 - Gio hang null/empty -&gt; throw exception" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCart_ThrowsException -->
+        <test-method signature="testInvalidCoupon_ThrowsException()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testInvalidCoupon_ThrowsException" description="BP5 - Coupon khong hop le -&gt; throw exception" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidCoupon_ThrowsException -->
+        <test-method signature="testMcdc_AFalse_BTrue_CTrue()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testMcdc_AFalse_BTrue_CTrue" description="MC/DC - A=F, B=T, C=T (coupon=null) -&gt; khong ap dung SALE10" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMcdc_AFalse_BTrue_CTrue -->
+        <test-method signature="testMcdc_ATrue_BFalse_CTrue()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testMcdc_ATrue_BFalse_CTrue" description="MC/DC - A=T, B=F, C=T (coupon=&quot;&quot;) -&gt; khong ap dung SALE10" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMcdc_ATrue_BFalse_CTrue -->
+        <test-method signature="testMcdc_ATrue_BTrue_CFalse()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testMcdc_ATrue_BTrue_CFalse" description="MC/DC - A=T, B=T, C=F (coupon=SALE20) -&gt; khong ap dung SALE10, ap dung giam 20%" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMcdc_ATrue_BTrue_CFalse -->
+        <test-method signature="testMcdc_ATrue_BTrue_CTrue()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testMcdc_ATrue_BTrue_CTrue" description="MC/DC - A=T, B=T, C=T (coupon=SALE10) -&gt; ap dung giam 10%" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMcdc_ATrue_BTrue_CTrue -->
+        <test-method signature="testMemberGold_DiscountAndShipCOD()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testMemberGold_DiscountAndShipCOD" description="BP6 - Member GOLD, khong coupon, ship COD (&lt;500k)" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMemberGold_DiscountAndShipCOD -->
+        <test-method signature="testNoCoupon_NoMember_TotalOverThreshold_NoShippingFee()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testNoCoupon_NoMember_TotalOverThreshold_NoShippingFee" description="BP2 - Khong coupon, khong member, tong &gt;= 500k, khong phi ship" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoCoupon_NoMember_TotalOverThreshold_NoShippingFee -->
+        <test-method signature="testNoDiscount_CodShipping()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testNoDiscount_CodShipping" description="BP9 - Khong coupon, khong member, ship COD (&lt;500k)" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoDiscount_CodShipping -->
+        <test-method signature="testNoDiscount_OnlineShipping()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testNoDiscount_OnlineShipping" description="BP8 - Khong coupon, khong member, ship ONLINE (&lt;500k)" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoDiscount_OnlineShipping -->
+        <test-method signature="testPlatinum_WithSale10_NoShipping()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testPlatinum_WithSale10_NoShipping" description="BP7 - Member PLATINUM, co coupon SALE10, tong &gt;= 500k, khong phi ship" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlatinum_WithSale10_NoShipping -->
+        <test-method signature="testSale10_NoMember_ShipCOD()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testSale10_NoMember_ShipCOD" description="BP3 - Coupon SALE10, khong member, ship COD (&lt;500k)" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSale10_NoMember_ShipCOD -->
+        <test-method signature="testSale20_NoMember_ShipOnline()[pri:0, instance:bai71.OrderProcessorTest@2fd1433e]" started-at="2026-03-10T16:15:10 GMT+07:00" name="testSale20_NoMember_ShipOnline" description="BP4 - Coupon SALE20, khong member, ship online (&lt;500k)" finished-at="2026-03-10T16:15:10 GMT+07:00" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSale20_NoMember_ShipOnline -->
+      </class> <!-- bai71.OrderProcessorTest -->
+    </test> <!-- OrderProcessor Tests -->
+  </suite> <!-- Bai 7.1 - OrderProcessor Suite -->
+</testng-results>
