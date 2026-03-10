@@ -1,0 +1,73 @@
+flowchart TD
+  %% Paste vào draw.io: Insert -> Advanced -> Mermaid
+
+  E([Entry])
+  N1{{"N1: (soM3 <= 0)"}}
+  X0(["Exit: return 0"])
+
+  N2{{"N2: loaiKhachHang == ho_ngheo"}}
+  N3{{"N3: loaiKhachHang == dan_cu"}}
+  N4{{"N4: soM3 <= 10"}}
+  N5{{"N5: soM3 <= 20"}}
+
+  DG5(["don_gia = 5000"])
+  DG75(["don_gia = 7500"])
+  DG99(["don_gia = 9900"])
+  DG114(["don_gia = 11400"])
+  DG22(["don_gia = 22000"])
+  R(["Exit: return soM3 * don_gia"])
+
+  %% Edge numbering:
+  %% E1:  E -> N1
+  %% E2:  N1 True  -> X0
+  %% E3:  N1 False -> N2
+  %% E4:  N2 True  -> DG5
+  %% E5:  DG5 -> R
+  %% E6:  N2 False -> N3
+  %% E7:  N3 True  -> N4
+  %% E8:  N3 False -> DG22
+  %% E9:  DG22 -> R
+  %% E10: N4 True  -> DG75
+  %% E11: DG75 -> R
+  %% E12: N4 False -> N5
+  %% E13: N5 True  -> DG99
+  %% E14: DG99 -> R
+  %% E15: N5 False -> DG114
+  %% E16: DG114 -> R
+
+  E --> N1
+  N1 -- True --> X0
+  N1 -- False --> N2
+
+  N2 -- True --> DG5 --> R
+  N2 -- False --> N3
+
+  N3 -- True --> N4
+  N3 -- False --> DG22 --> R
+
+  N4 -- True --> DG75 --> R
+  N4 -- False --> N5
+
+  N5 -- True --> DG99 --> R
+  N5 -- False --> DG114 --> R
+
+  %% ========= Ý 2) TC tối thiểu (đạt 100% Branch Coverage) =========
+  %% TC1: soM3=0,  loai=ho_ngheo     | E->N1(T)->Exit0
+  %% TC2: soM3=5,  loai=ho_ngheo     | E->N1(F)->N2(T)->DG5->R
+  %% TC3: soM3=10, loai=dan_cu       | E->N1(F)->N2(F)->N3(T)->N4(T)->DG75->R
+  %% TC4: soM3=15, loai=dan_cu       | E->N1(F)->N2(F)->N3(T)->N4(F)->N5(T)->DG99->R
+  %% TC5: soM3=25, loai=dan_cu       | E->N1(F)->N2(F)->N3(T)->N4(F)->N5(F)->DG114->R
+  %% TC6: soM3=5,  loai=kinh_doanh   | E->N1(F)->N2(F)->N3(F)->DG22->R
+
+  %% ========= Ý 3) Mapping phủ nhánh =========
+  %% N1-True:  TC1
+  %% N1-False: TC2, TC3, TC4, TC5, TC6
+  %% N2-True:  TC2
+  %% N2-False: TC3, TC4, TC5, TC6
+  %% N3-True:  TC3, TC4, TC5
+  %% N3-False: TC6
+  %% N4-True:  TC3
+  %% N4-False: TC4, TC5
+  %% N5-True:  TC4
+  %% N5-False: TC5
+

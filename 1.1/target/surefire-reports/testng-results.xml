@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T13:19:02 GMT+07:00" name="Title Test Suite" finished-at="2026-03-10T13:19:32 GMT+07:00" duration-ms="30134">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T13:19:02 GMT+07:00" name="Saucedemo Title Tests" finished-at="2026-03-10T13:19:32 GMT+07:00" duration-ms="30134">
+      <class name="dtm.TitleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:02 GMT+07:00" name="setUp" finished-at="2026-03-10T13:19:05 GMT+07:00" duration-ms="2931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFormDisplayed()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:05 GMT+07:00" name="testLoginFormDisplayed" description="Kiem thu form dang nhap co hien thi" finished-at="2026-03-10T13:19:05 GMT+07:00" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFormDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:05 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:19:11 GMT+07:00" duration-ms="5225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:11 GMT+07:00" name="setUp" finished-at="2026-03-10T13:19:13 GMT+07:00" duration-ms="2248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageSourceContainsSwagLabs()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:13 GMT+07:00" name="testPageSourceContainsSwagLabs" description="Kiem thu nguon trang co chua Swag Labs" finished-at="2026-03-10T13:19:13 GMT+07:00" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageSourceContainsSwagLabs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:13 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:19:18 GMT+07:00" duration-ms="5245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:18 GMT+07:00" name="setUp" finished-at="2026-03-10T13:19:20 GMT+07:00" duration-ms="2248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTitle()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:20 GMT+07:00" name="testTitle" description="Kiem thu tieu de trang chu" finished-at="2026-03-10T13:19:20 GMT+07:00" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:20 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:19:25 GMT+07:00" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:25 GMT+07:00" name="setUp" finished-at="2026-03-10T13:19:27 GMT+07:00" duration-ms="1623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testURL()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:27 GMT+07:00" name="testURL" description="Kiem thu URL trang chu" finished-at="2026-03-10T13:19:27 GMT+07:00" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.TitleTest@223f3642]" started-at="2026-03-10T13:19:27 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:19:32 GMT+07:00" duration-ms="5176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dtm.TitleTest -->
+    </test> <!-- Saucedemo Title Tests -->
+  </suite> <!-- Title Test Suite -->
+</testng-results>

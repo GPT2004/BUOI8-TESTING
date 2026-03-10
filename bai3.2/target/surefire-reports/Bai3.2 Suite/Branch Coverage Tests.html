@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>TestNG:  Branch Coverage Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Branch Coverage Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 14:05:36 GMT+07:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (56 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc1_soM3_le_0()'><b>tc1_soM3_le_0</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC1: N1 True (soM3<=0) -> 0</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc5_dan_cu_gt_20()'><b>tc5_dan_cu_gt_20</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC5: N3 True (dan_cu), N4 False, N5 False (>20) -> 11400</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc6_kinh_doanh()'><b>tc6_kinh_doanh</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC6: N2 False, N3 False -> else (kinh_doanh/khac) don_gia=22000</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc4_dan_cu_11_20()'><b>tc4_dan_cu_11_20</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC4: N3 True (dan_cu), N4 False, N5 True (<=20) -> 9900</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc2_ho_ngheo()'><b>tc2_ho_ngheo</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC2: N2 True (ho_ngheo) -> don_gia=5000</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+<tr>
+<td title='bai32.BranchCoverageTest.tc3_dan_cu_le_10()'><b>tc3_dan_cu_le_10</b><br>Test class: bai32.BranchCoverageTest<br>Test method: TC3: N3 True (dan_cu), N4 True (<=10) -> 7500</td>
+<td></td>
+<td>0</td>
+<td>bai32.BranchCoverageTest@23282c25</td></tr>
+</table><p>
+</body>
+</html>

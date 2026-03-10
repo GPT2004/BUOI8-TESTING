@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T14:05:36 GMT+07:00" name="Bai3.2 Suite" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="56">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T14:05:36 GMT+07:00" name="Branch Coverage Tests" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="56">
+      <class name="bai32.BranchCoverageTest">
+        <test-method signature="tc1_soM3_le_0()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc1_soM3_le_0" description="TC1: N1 True (soM3&lt;=0) -&gt; 0" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1_soM3_le_0 -->
+        <test-method signature="tc2_ho_ngheo()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc2_ho_ngheo" description="TC2: N2 True (ho_ngheo) -&gt; don_gia=5000" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2_ho_ngheo -->
+        <test-method signature="tc3_dan_cu_le_10()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc3_dan_cu_le_10" description="TC3: N3 True (dan_cu), N4 True (&lt;=10) -&gt; 7500" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3_dan_cu_le_10 -->
+        <test-method signature="tc4_dan_cu_11_20()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc4_dan_cu_11_20" description="TC4: N3 True (dan_cu), N4 False, N5 True (&lt;=20) -&gt; 9900" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4_dan_cu_11_20 -->
+        <test-method signature="tc5_dan_cu_gt_20()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc5_dan_cu_gt_20" description="TC5: N3 True (dan_cu), N4 False, N5 False (&gt;20) -&gt; 11400" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc5_dan_cu_gt_20 -->
+        <test-method signature="tc6_kinh_doanh()[pri:0, instance:bai32.BranchCoverageTest@23282c25]" started-at="2026-03-10T14:05:36 GMT+07:00" name="tc6_kinh_doanh" description="TC6: N2 False, N3 False -&gt; else (kinh_doanh/khac) don_gia=22000" finished-at="2026-03-10T14:05:36 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc6_kinh_doanh -->
+      </class> <!-- bai32.BranchCoverageTest -->
+    </test> <!-- Branch Coverage Tests -->
+  </suite> <!-- Bai3.2 Suite -->
+</testng-results>

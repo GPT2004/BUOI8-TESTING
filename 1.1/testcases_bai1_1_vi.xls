@@ -1,0 +1,274 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Bài 1.1 - Test case</title>
+  <style>
+    table { border-collapse: collapse; font-family: Arial, sans-serif; }
+    th, td { border: 1px solid #333; padding: 6px 8px; vertical-align: top; }
+    th { background: #f2f2f2; }
+    .small { color: #555; font-size: 12px; }
+  </style>
+</head>
+<body>
+<h3>Bài 1.1 - Test case trang https://www.saucedemo.com/</h3>
+<div class="small">
+  File này là bảng HTML (.xls) mở được bằng Excel.
+</div>
+<table>
+  <tr>
+    <th>TC ID</th>
+    <th>Tiêu đề test case</th>
+    <th>Mục tiêu kiểm thử</th>
+    <th>Tiền điều kiện</th>
+    <th>Bước thực hiện (mô tả ngắn)</th>
+    <th>Dữ liệu test</th>
+    <th>Kết quả mong đợi</th>
+    <th>Loại</th>
+    <th>Độ ưu tiên</th>
+    <th>Pass/Failed</th>
+  </tr>
+
+  <tr>
+    <td>TC-01</td>
+    <td>Kiểm thử tiêu đề trang chủ</td>
+    <td>Kiểm tra title của trang</td>
+    <td>Mở được Edge</td>
+    <td>1) Mở https://www.saucedemo.com/</td>
+    <td>N/A</td>
+    <td>Title = "Swag Labs"</td>
+    <td>UI</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-02</td>
+    <td>Kiểm thử URL trang chủ</td>
+    <td>Kiểm tra URL trang</td>
+    <td>Mở được Edge</td>
+    <td>1) Mở https://www.saucedemo.com/</td>
+    <td>N/A</td>
+    <td>URL chứa "saucedemo"</td>
+    <td>UI</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-03</td>
+    <td>Kiểm thử page source có chứa Swag Labs</td>
+    <td>Kiểm tra nguồn trang</td>
+    <td>Mở được Edge</td>
+    <td>1) Mở trang 2) Lấy page source</td>
+    <td>N/A</td>
+    <td>Page source chứa "Swag Labs"</td>
+    <td>UI</td>
+    <td>Trung bình</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-04</td>
+    <td>Kiểm tra ô Username hiển thị</td>
+    <td>Kiểm tra form đăng nhập</td>
+    <td>Trang login mở</td>
+    <td>1) Mở trang 2) Quan sát ô Username</td>
+    <td>Locator: id=user-name</td>
+    <td>Ô Username hiển thị</td>
+    <td>UI</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-05</td>
+    <td>Kiểm tra ô Password hiển thị</td>
+    <td>Kiểm tra form đăng nhập</td>
+    <td>Trang login mở</td>
+    <td>1) Mở trang 2) Quan sát ô Password</td>
+    <td>Locator: id=password</td>
+    <td>Ô Password hiển thị</td>
+    <td>UI</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-06</td>
+    <td>Kiểm tra nút Login hiển thị</td>
+    <td>Kiểm tra form đăng nhập</td>
+    <td>Trang login mở</td>
+    <td>1) Mở trang 2) Quan sát nút Login</td>
+    <td>Locator: id=login-button</td>
+    <td>Nút Login hiển thị</td>
+    <td>UI</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-07</td>
+    <td>Kiểm tra placeholder của Username</td>
+    <td>Kiểm tra UI input</td>
+    <td>Trang login mở</td>
+    <td>1) Xem placeholder ô Username</td>
+    <td>Expected: "Username"</td>
+    <td>Placeholder đúng "Username"</td>
+    <td>UI</td>
+    <td>Thấp</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-08</td>
+    <td>Kiểm tra placeholder của Password</td>
+    <td>Kiểm tra UI input</td>
+    <td>Trang login mở</td>
+    <td>1) Xem placeholder ô Password</td>
+    <td>Expected: "Password"</td>
+    <td>Placeholder đúng "Password"</td>
+    <td>UI</td>
+    <td>Thấp</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-09</td>
+    <td>Kiểm tra text nút Login</td>
+    <td>Kiểm tra UI button</td>
+    <td>Trang login mở</td>
+    <td>1) Kiểm tra text/value của nút Login</td>
+    <td>Expected: "Login"</td>
+    <td>Nút hiển thị "Login"</td>
+    <td>UI</td>
+    <td>Thấp</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-10</td>
+    <td>Kiểm tra container của form đăng nhập</td>
+    <td>Kiểm tra form</td>
+    <td>Trang login mở</td>
+    <td>1) Tìm login container</td>
+    <td>Locator: id=login_button_container</td>
+    <td>Container tồn tại</td>
+    <td>UI</td>
+    <td>Trung bình</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-11</td>
+    <td>Đăng nhập với tài khoản hợp lệ</td>
+    <td>Kiểm tra đăng nhập thành công</td>
+    <td>Trang login mở</td>
+    <td>1) Nhập username 2) Nhập password 3) Click Login</td>
+    <td>standard_user / secret_sauce</td>
+    <td>Chuyển đến /inventory.html</td>
+    <td>Chức năng</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-12</td>
+    <td>Đăng nhập sai mật khẩu</td>
+    <td>Kiểm tra thông báo lỗi</td>
+    <td>Trang login mở</td>
+    <td>1) Nhập username 2) Nhập sai password 3) Click Login</td>
+    <td>standard_user / wrong</td>
+    <td>Hiển thị thông báo lỗi</td>
+    <td>Chức năng</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-13</td>
+    <td>Đăng nhập bỏ trống Username</td>
+    <td>Kiểm tra validate</td>
+    <td>Trang login mở</td>
+    <td>1) Để trống username 2) Nhập password 3) Click Login</td>
+    <td>"" / secret_sauce</td>
+    <td>Lỗi chứa "Username is required"</td>
+    <td>Validation</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-14</td>
+    <td>Đăng nhập bỏ trống Password</td>
+    <td>Kiểm tra validate</td>
+    <td>Trang login mở</td>
+    <td>1) Nhập username 2) Để trống password 3) Click Login</td>
+    <td>standard_user / ""</td>
+    <td>Lỗi chứa "Password is required"</td>
+    <td>Validation</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-15</td>
+    <td>Đăng nhập user bị khóa</td>
+    <td>Kiểm tra trạng thái user bị khóa</td>
+    <td>Trang login mở</td>
+    <td>1) Nhập username 2) Nhập password 3) Click Login</td>
+    <td>locked_out_user / secret_sauce</td>
+    <td>Lỗi chứa "locked out"</td>
+    <td>Chức năng</td>
+    <td>Cao</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-16</td>
+    <td>Kiểm tra nút đóng thông báo lỗi hiển thị</td>
+    <td>Kiểm tra UI lỗi</td>
+    <td>Sau khi đăng nhập thất bại</td>
+    <td>1) Tạo lỗi 2) Kiểm tra nút đóng (X)</td>
+    <td>Locator: .error-button</td>
+    <td>Nút đóng (X) hiển thị</td>
+    <td>UI</td>
+    <td>Trung bình</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-17</td>
+    <td>Đóng thông báo lỗi</td>
+    <td>Kiểm tra đóng alert lỗi</td>
+    <td>Sau khi đăng nhập thất bại</td>
+    <td>1) Click nút đóng (X)</td>
+    <td>N/A</td>
+    <td>Thông báo lỗi biến mất</td>
+    <td>UI</td>
+    <td>Trung bình</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-18</td>
+    <td>Kiểm tra tab order từ Username sang Password</td>
+    <td>Kiểm tra thao tác bàn phím</td>
+    <td>Trang login mở</td>
+    <td>1) Focus Username 2) Nhấn TAB</td>
+    <td>N/A</td>
+    <td>Focus chuyển sang Password</td>
+    <td>UX</td>
+    <td>Thấp</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-19</td>
+    <td>Nhấn Enter để đăng nhập</td>
+    <td>Kiểm tra submit bằng Enter</td>
+    <td>Trang login mở</td>
+    <td>1) Nhập username/password 2) Nhấn ENTER</td>
+    <td>standard_user / secret_sauce</td>
+    <td>Đăng nhập thành công (inventory)</td>
+    <td>UX</td>
+    <td>Thấp</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TC-20</td>
+    <td>Trang tải thành công</td>
+    <td>Smoke test</td>
+    <td>Mạng ổn định</td>
+    <td>1) Mở trang 2) Quan sát hiển thị</td>
+    <td>N/A</td>
+    <td>Trang hiển thị đúng form đăng nhập</td>
+    <td>Smoke</td>
+    <td>Trung bình</td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
+

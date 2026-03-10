@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T13:40:04 GMT+07:00" name="SauceDemo_Suite" finished-at="2026-03-10T13:40:38 GMT+07:00" duration-ms="34127">
+    <groups>
+      <group name="regression">
+        <method signature="CartTest.testAddToCart(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" name="testAddToCart" class="bai21.tests.CartTest"/>
+        <method signature="CartTest.testEmptyCartHasNoItems(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" name="testEmptyCartHasNoItems" class="bai21.tests.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutMissingFirstNameShowsError(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" name="testCheckoutMissingFirstNameShowsError" class="bai21.tests.CheckoutTest"/>
+        <method signature="CheckoutTest.testCheckoutSuccess(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" name="testCheckoutSuccess" class="bai21.tests.CheckoutTest"/>
+        <method signature="LoginTest.testLoginLockedUser(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" name="testLoginLockedUser" class="bai21.tests.LoginTest"/>
+        <method signature="LoginTest.testLoginSuccess(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" name="testLoginSuccess" class="bai21.tests.LoginTest"/>
+        <method signature="LoginTest.testLoginWrongPasswordShowsError(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" name="testLoginWrongPasswordShowsError" class="bai21.tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CartTest.testAddToCart(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" name="testAddToCart" class="bai21.tests.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutSuccess(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" name="testCheckoutSuccess" class="bai21.tests.CheckoutTest"/>
+        <method signature="LoginTest.testLoginSuccess(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" name="testLoginSuccess" class="bai21.tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-10T13:40:04 GMT+07:00" name="All Tests - regression" finished-at="2026-03-10T13:40:38 GMT+07:00" duration-ms="34127">
+      <class name="bai21.tests.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:04 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:05 GMT+07:00" duration-ms="1640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCart(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:05 GMT+07:00" name="testAddToCart" description="Add to cart 1 sản phẩm -&gt; vào cart thấy item" finished-at="2026-03-10T13:40:07 GMT+07:00" duration-ms="1460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:07 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:12 GMT+07:00" duration-ms="5299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:12 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:13 GMT+07:00" duration-ms="968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyCartHasNoItems(java.lang.String)[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:13 GMT+07:00" name="testEmptyCartHasNoItems" description="Vào cart khi chưa add -&gt; không có item" finished-at="2026-03-10T13:40:15 GMT+07:00" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCartHasNoItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.CartTest@7c469c48]" started-at="2026-03-10T13:40:15 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:20 GMT+07:00" duration-ms="5280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bai21.tests.CartTest -->
+      <class name="bai21.tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:20 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:21 GMT+07:00" duration-ms="1041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutMissingFirstNameShowsError(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:21 GMT+07:00" name="testCheckoutMissingFirstNameShowsError" description="Checkout thiếu first name -&gt; báo lỗi" finished-at="2026-03-10T13:40:24 GMT+07:00" duration-ms="2796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutMissingFirstNameShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:24 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:29 GMT+07:00" duration-ms="5274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:29 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:30 GMT+07:00" duration-ms="968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutSuccess(java.lang.String)[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:30 GMT+07:00" name="testCheckoutSuccess" description="Checkout happy path -&gt; Complete!" finished-at="2026-03-10T13:40:33 GMT+07:00" duration-ms="2535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.CheckoutTest@12e61fe6]" started-at="2026-03-10T13:40:33 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:38 GMT+07:00" duration-ms="5234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bai21.tests.CheckoutTest -->
+      <class name="bai21.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:04 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:05 GMT+07:00" duration-ms="1614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginLockedUser(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:05 GMT+07:00" name="testLoginLockedUser" description="Locked user -&gt; hiển thị locked out" finished-at="2026-03-10T13:40:07 GMT+07:00" duration-ms="1767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginLockedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:07 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:12 GMT+07:00" duration-ms="5322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:12 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:14 GMT+07:00" duration-ms="1178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccess(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:14 GMT+07:00" name="testLoginSuccess" description="Đăng nhập đúng -&gt; vào inventory" finished-at="2026-03-10T13:40:15 GMT+07:00" duration-ms="1283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:15 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:20 GMT+07:00" duration-ms="5257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:20 GMT+07:00" name="setUp" finished-at="2026-03-10T13:40:22 GMT+07:00" duration-ms="1422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWrongPasswordShowsError(java.lang.String)[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:22 GMT+07:00" name="testLoginWrongPasswordShowsError" description="Sai mật khẩu -&gt; hiển thị lỗi" finished-at="2026-03-10T13:40:24 GMT+07:00" duration-ms="2156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPasswordShowsError -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai21.tests.LoginTest@1fe20588]" started-at="2026-03-10T13:40:24 GMT+07:00" name="tearDown" finished-at="2026-03-10T13:40:29 GMT+07:00" duration-ms="5283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bai21.tests.LoginTest -->
+    </test> <!-- All Tests - regression -->
+  </suite> <!-- SauceDemo_Suite -->
+</testng-results>

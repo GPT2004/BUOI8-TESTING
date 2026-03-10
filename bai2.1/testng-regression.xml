@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo_Suite" verbose="1" parallel="classes" thread-count="2">
+    <parameter name="baseUrl" value="https://www.saucedemo.com/"/>
+    <parameter name="driverPath" value="D:\Download\edgedriver_win64\msedgedriver.exe"/>
+
+    <groups>
+        <run>
+            <include name="regression"/>
+        </run>
+    </groups>
+
+    <test name="All Tests - regression">
+        <classes>
+            <class name="bai21.tests.LoginTest"/>
+            <class name="bai21.tests.CartTest"/>
+            <class name="bai21.tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
+

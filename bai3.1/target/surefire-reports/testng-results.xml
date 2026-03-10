@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T13:55:17 GMT+07:00" name="Bai3.1 Suite" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="41">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T13:55:17 GMT+07:00" name="Branch Coverage Tests" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="41">
+      <class name="bai31.BranchCoverageTest">
+        <test-method signature="tc1_invalidScore()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:17 GMT+07:00" name="tc1_invalidScore" description="TC1: Điều kiện 1 (invalid) = True -&gt; Diem khong hop le" finished-at="2026-03-10T13:55:17 GMT+07:00" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1_invalidScore -->
+        <test-method signature="tc2_gioi()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:17 GMT+07:00" name="tc2_gioi" description="TC2: Điều kiện 2 = True -&gt; Gioi" finished-at="2026-03-10T13:55:17 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2_gioi -->
+        <test-method signature="tc3_kha()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:18 GMT+07:00" name="tc3_kha" description="TC3: Điều kiện 3 = True (sau khi ĐK2 False) -&gt; Kha" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3_kha -->
+        <test-method signature="tc4_trungBinh()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:18 GMT+07:00" name="tc4_trungBinh" description="TC4: Điều kiện 4 = True (sau khi ĐK2,3 False) -&gt; Trung Binh" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4_trungBinh -->
+        <test-method signature="tc5_thiLai()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:18 GMT+07:00" name="tc5_thiLai" description="TC5: Điều kiện 5 = True (diemTB &lt;5.5, coThiLai=true) -&gt; Thi lai" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc5_thiLai -->
+        <test-method signature="tc6_yeuHocLai()[pri:0, instance:bai31.BranchCoverageTest@7920ba90]" started-at="2026-03-10T13:55:18 GMT+07:00" name="tc6_yeuHocLai" description="TC6: Điều kiện 5 = False (diemTB &lt;5.5, coThiLai=false) -&gt; Yeu - Hoc lai" finished-at="2026-03-10T13:55:18 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc6_yeuHocLai -->
+      </class> <!-- bai31.BranchCoverageTest -->
+    </test> <!-- Branch Coverage Tests -->
+  </suite> <!-- Bai3.1 Suite -->
+</testng-results>

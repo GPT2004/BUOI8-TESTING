@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T13:10:43 GMT+07:00" name="Login Test Suite" finished-at="2026-03-10T13:11:23 GMT+07:00" duration-ms="39565">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T13:10:43 GMT+07:00" name="Saucedemo Login Tests" finished-at="2026-03-10T13:11:23 GMT+07:00" duration-ms="39565">
+      <class name="com.saucedemo.LoginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:43 GMT+07:00" name="openBrowser" finished-at="2026-03-10T13:10:44 GMT+07:00" duration-ms="1365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLoginEmptyPassword()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:44 GMT+07:00" name="testLoginEmptyPassword" finished-at="2026-03-10T13:10:46 GMT+07:00" duration-ms="1541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:46 GMT+07:00" name="closeBrowser" finished-at="2026-03-10T13:10:51 GMT+07:00" duration-ms="5284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:51 GMT+07:00" name="openBrowser" finished-at="2026-03-10T13:10:52 GMT+07:00" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLoginEmptyUsername()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:52 GMT+07:00" name="testLoginEmptyUsername" finished-at="2026-03-10T13:10:54 GMT+07:00" duration-ms="1381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginEmptyUsername -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:54 GMT+07:00" name="closeBrowser" finished-at="2026-03-10T13:10:59 GMT+07:00" duration-ms="5341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:10:59 GMT+07:00" name="openBrowser" finished-at="2026-03-10T13:11:00 GMT+07:00" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLoginLockedUser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:00 GMT+07:00" name="testLoginLockedUser" finished-at="2026-03-10T13:11:02 GMT+07:00" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginLockedUser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:02 GMT+07:00" name="closeBrowser" finished-at="2026-03-10T13:11:07 GMT+07:00" duration-ms="5239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:07 GMT+07:00" name="openBrowser" finished-at="2026-03-10T13:11:08 GMT+07:00" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:08 GMT+07:00" name="testLoginSuccess" finished-at="2026-03-10T13:11:09 GMT+07:00" duration-ms="1450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:09 GMT+07:00" name="closeBrowser" finished-at="2026-03-10T13:11:15 GMT+07:00" duration-ms="5296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:15 GMT+07:00" name="openBrowser" finished-at="2026-03-10T13:11:15 GMT+07:00" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="testLoginWrongPassword()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:15 GMT+07:00" name="testLoginWrongPassword" finished-at="2026-03-10T13:11:17 GMT+07:00" duration-ms="1841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.saucedemo.LoginTest@60dcc9fe]" started-at="2026-03-10T13:11:17 GMT+07:00" name="closeBrowser" finished-at="2026-03-10T13:11:23 GMT+07:00" duration-ms="5279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.saucedemo.LoginTest -->
+    </test> <!-- Saucedemo Login Tests -->
+  </suite> <!-- Login Test Suite -->
+</testng-results>
