@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:30:37 GMT+07:00" name="Bai6.1 Suite" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="118">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:30:37 GMT+07:00" name="Phone Validator Tests" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="118">
+      <class name="bai61.PhoneValidatorTest">
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Null không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chuỗi rỗng không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chỉ space không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Độ dài < 10 sau chuẩn hóa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[00123456789]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Độ dài > 10 sau chuẩn hóa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+849912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sau chuẩn hóa dài hơn 10 chữ số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0112345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prefix 01x không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0212345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Prefix 02x không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ký tự chữ cái không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09-12345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ký tự '-' không hợp lệ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testInvalidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testInvalidPhones" description="Các trường hợp số điện thoại KHÔNG hợp lệ" data-provider="invalidPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+849x234567]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chứa chữ cái sau +84]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidPhones -->
+        <test-method signature="testValidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testValidPhones" description="Các trường hợp số điện thoại hợp lệ theo luật VN" data-provider="validPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Số 09x chuẩn 10 chữ số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidPhones -->
+        <test-method signature="testValidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testValidPhones" description="Các trường hợp số điện thoại hợp lệ theo luật VN" data-provider="validPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0351234567]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Số 03x chuẩn 10 chữ số]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidPhones -->
+        <test-method signature="testValidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testValidPhones" description="Các trường hợp số điện thoại hợp lệ theo luật VN" data-provider="validPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[+84 912345678]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[+84 và space, chuẩn hóa về 0912345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidPhones -->
+        <test-method signature="testValidPhones(java.lang.String,java.lang.String,boolean)[pri:0, instance:bai61.PhoneValidatorTest@616fe72b]" started-at="2026-03-10T15:30:37 GMT+07:00" name="testValidPhones" description="Các trường hợp số điện thoại hợp lệ theo luật VN" data-provider="validPhones" finished-at="2026-03-10T15:30:37 GMT+07:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0 8 1 2 3 4 5 6 7 8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Có space nhưng chỉ chứa số và space]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidPhones -->
+      </class> <!-- bai61.PhoneValidatorTest -->
+    </test> <!-- Phone Validator Tests -->
+  </suite> <!-- Bai6.1 Suite -->
+</testng-results>

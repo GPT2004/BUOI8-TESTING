@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:39:36 GMT+07:00" name="Bai6.2 Suite" finished-at="2026-03-10T15:40:12 GMT+07:00" duration-ms="36051">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:39:36 GMT+07:00" name="TextBox WhiteBox Tests" finished-at="2026-03-10T15:40:12 GMT+07:00" duration-ms="36051">
+      <class name="bai62.tests.TextBoxWhiteBoxTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:36 GMT+07:00" name="setUp" finished-at="2026-03-10T15:39:40 GMT+07:00" duration-ms="3778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demoqa.com/text-box]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddressWithSpecialChars()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:40 GMT+07:00" name="testAddressWithSpecialChars" description="Các ký tự đặc biệt trong địa chỉ -&gt; vẫn lưu và hiển thị đúng" finished-at="2026-03-10T15:39:40 GMT+07:00" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddressWithSpecialChars -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:40 GMT+07:00" name="tearDown" finished-at="2026-03-10T15:39:44 GMT+07:00" duration-ms="3282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:44 GMT+07:00" name="setUp" finished-at="2026-03-10T15:39:47 GMT+07:00" duration-ms="3458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demoqa.com/text-box]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyAddress_StillOutput()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:47 GMT+07:00" name="testEmptyAddress_StillOutput" description="Địa chỉ rỗng nhưng name + email hợp lệ -&gt; vẫn hiển thị output (boundary)" finished-at="2026-03-10T15:39:48 GMT+07:00" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyAddress_StillOutput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:48 GMT+07:00" name="tearDown" finished-at="2026-03-10T15:39:51 GMT+07:00" duration-ms="3191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:51 GMT+07:00" name="setUp" finished-at="2026-03-10T15:39:53 GMT+07:00" duration-ms="1819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demoqa.com/text-box]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyName_StillAccept()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:53 GMT+07:00" name="testEmptyName_StillAccept" description="Tên rỗng nhưng email + address hợp lệ -&gt; vẫn cho submit (white-box xác nhận)" finished-at="2026-03-10T15:39:54 GMT+07:00" duration-ms="1960" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Output vẫn phải render phần Name (có thể rỗng). expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Output vẫn phải render phần Name (có thể rỗng). expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at bai62.tests.TextBoxWhiteBoxTest.testEmptyName_StillAccept(TextBoxWhiteBoxTest.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyName_StillAccept -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:55 GMT+07:00" name="tearDown" finished-at="2026-03-10T15:39:58 GMT+07:00" duration-ms="3257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:39:58 GMT+07:00" name="setUp" finished-at="2026-03-10T15:40:01 GMT+07:00" duration-ms="3334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demoqa.com/text-box]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidEmail_ShowsClientValidation()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:40:01 GMT+07:00" name="testInvalidEmail_ShowsClientValidation" description="Email sai định dạng -&gt; không có output, highlight lỗi email" finished-at="2026-03-10T15:40:02 GMT+07:00" duration-ms="494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidEmail_ShowsClientValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:40:02 GMT+07:00" name="tearDown" finished-at="2026-03-10T15:40:05 GMT+07:00" duration-ms="3231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:40:05 GMT+07:00" name="setUp" finished-at="2026-03-10T15:40:08 GMT+07:00" duration-ms="3194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://demoqa.com/text-box]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[D:\Download\edgedriver_win64\msedgedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidInput_ShowsOutput()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:40:08 GMT+07:00" name="testValidInput_ShowsOutput" description="Happy path: name/email/address hợp lệ -&gt; output hiển thị đầy đủ" finished-at="2026-03-10T15:40:09 GMT+07:00" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidInput_ShowsOutput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bai62.tests.TextBoxWhiteBoxTest@222114ba]" started-at="2026-03-10T15:40:09 GMT+07:00" name="tearDown" finished-at="2026-03-10T15:40:12 GMT+07:00" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bai62.tests.TextBoxWhiteBoxTest -->
+    </test> <!-- TextBox WhiteBox Tests -->
+  </suite> <!-- Bai6.2 Suite -->
+</testng-results>

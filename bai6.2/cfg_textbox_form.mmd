@@ -1,0 +1,18 @@
+flowchart TD
+  %% Paste vào draw.io: Insert -> Advanced -> Mermaid
+  %% Mô tả luồng xử lý form Text Box: nhập liệu -> validate -> hiển thị kết quả
+
+  E([Entry])
+  N0{{"Click Submit?"}}
+  N1{{"Email hợp lệ?"}}
+  N2{{"Các field khác (name/address) chỉ cần collect"}}
+  OUT_SHOWN([Hiển thị output với name/email/address])
+  NO_OUT([Không hiển thị output])
+
+  E --> N0
+  %% khi bấm submit, luôn chạy validate email
+  N0 --> N1
+
+  N1 -- "False (email sai)" --> NO_OUT
+  N1 -- "True (email đúng)" --> N2 --> OUT_SHOWN
+

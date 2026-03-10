@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  Phone Validator Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Phone Validator Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 15:30:37 GMT+07:00 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (118 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: 0212345678, Prefix 02x không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testValidPhones()'><b>testValidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại hợp lệ theo luật VN<br>Parameters: +84 912345678, +84 và space, chuẩn hóa về 0912345678, true</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testValidPhones()'><b>testValidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại hợp lệ theo luật VN<br>Parameters: 0 8 1 2 3 4 5 6 7 8, Có space nhưng chỉ chứa số và space, true</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: 09123, Độ dài < 10 sau chuẩn hóa, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: +849x234567, Chứa chữ cái sau +84, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: 09-12345678, Ký tự '-' không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: 0112345678, Prefix 01x không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: 00123456789, Độ dài > 10 sau chuẩn hóa, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testValidPhones()'><b>testValidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại hợp lệ theo luật VN<br>Parameters: 0351234567, Số 03x chuẩn 10 chữ số, true</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: null, Null không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: +849912345678, Sau chuẩn hóa dài hơn 10 chữ số, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: , Chuỗi rỗng không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters: a912345678, Ký tự chữ cái không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testInvalidPhones()'><b>testInvalidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại KHÔNG hợp lệ<br>Parameters:    , Chỉ space không hợp lệ, false</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+<tr>
+<td title='bai61.PhoneValidatorTest.testValidPhones()'><b>testValidPhones</b><br>Test class: bai61.PhoneValidatorTest<br>Test method: Các trường hợp số điện thoại hợp lệ theo luật VN<br>Parameters: 0912345678, Số 09x chuẩn 10 chữ số, true</td>
+<td></td>
+<td>0</td>
+<td>bai61.PhoneValidatorTest@616fe72b</td></tr>
+</table><p>
+</body>
+</html>

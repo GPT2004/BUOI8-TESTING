@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Test cases - Phone Validator</title>
+  <style>
+    table { border-collapse: collapse; font-family: Arial, sans-serif; font-size: 11px; }
+    th, td { border: 1px solid #333; padding: 4px 6px; vertical-align: top; }
+    th { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+<h3>Bài 6.1 - Test case cho PhoneValidator.isValid(String)</h3>
+<table>
+  <tr>
+    <th>TC ID</th>
+    <th>Tiêu đề</th>
+    <th>Input (chuỗi số điện thoại)</th>
+    <th>Mục tiêu / Đường đi</th>
+    <th>Kết quả mong đợi</th>
+  </tr>
+  <tr>
+    <td>TC01</td>
+    <td>Số 09x hợp lệ</td>
+    <td>0912345678</td>
+    <td>Đúng dạng 0xxxxxxxxx, prefix 09x</td>
+    <td>Valid (true)</td>
+  </tr>
+  <tr>
+    <td>TC02</td>
+    <td>Số 03x hợp lệ</td>
+    <td>0351234567</td>
+    <td>Đúng dạng 0xxxxxxxxx, prefix 03x</td>
+    <td>Valid (true)</td>
+  </tr>
+  <tr>
+    <td>TC03</td>
+    <td>+84 và space, chuẩn hóa về 09x</td>
+    <td>+84 912345678</td>
+    <td>Chuẩn hóa +84 -> 0, bỏ space, kiểm tra prefix 09x</td>
+    <td>Valid (true)</td>
+  </tr>
+  <tr>
+    <td>TC04</td>
+    <td>Có space nhưng chỉ chứa số và space</td>
+    <td>0 8 1 2 3 4 5 6 7 8</td>
+    <td>Bỏ space -> 0812345678, prefix 08x</td>
+    <td>Valid (true)</td>
+  </tr>
+  <tr>
+    <td>TC05</td>
+    <td>Null</td>
+    <td>null</td>
+    <td>Không có dữ liệu</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC06</td>
+    <td>Chuỗi rỗng</td>
+    <td>""</td>
+    <td>Không có ký tự nào</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC07</td>
+    <td>Chỉ space</td>
+    <td>"   "</td>
+    <td>Bỏ space -> rỗng</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC08</td>
+    <td>Chiều dài &lt; 10 sau chuẩn hóa</td>
+    <td>09123</td>
+    <td>Sau chuẩn hóa chỉ có 5 chữ số</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC09</td>
+    <td>Chiều dài &gt; 10 sau chuẩn hóa</td>
+    <td>00123456789</td>
+    <td>Sau chuẩn hóa 11 chữ số</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC10</td>
+    <td>+84 nhưng quá dài</td>
+    <td>+849912345678</td>
+    <td>Sau chuẩn hóa thành 0 + 9 9 1 2 ... &gt; 10 chữ số</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC11</td>
+    <td>Prefix 01x không hợp lệ</td>
+    <td>0112345678</td>
+    <td>Prefix 01x không thuộc {03,05,07,08,09}</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC12</td>
+    <td>Prefix 02x không hợp lệ</td>
+    <td>0212345678</td>
+    <td>Prefix 02x không thuộc {03,05,07,08,09}</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC13</td>
+    <td>Ký tự chữ cái</td>
+    <td>a912345678</td>
+    <td>Ký tự 'a' không cho phép</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC14</td>
+    <td>Ký tự đặc biệt '-'</td>
+    <td>09-12345678</td>
+    <td>Dấu '-' không cho phép</td>
+    <td>Invalid (false)</td>
+  </tr>
+  <tr>
+    <td>TC15</td>
+    <td>Chữ cái sau +84</td>
+    <td>+849x234567</td>
+    <td>Chứa 'x' sau loại bỏ +84</td>
+    <td>Invalid (false)</td>
+  </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bai6.2 Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="baseUrl" value="https://demoqa.com/text-box"/>
+  <parameter name="edgeDriverPath" value="D:\Download\edgedriver_win64\msedgedriver.exe"/>
+  <test thread-count="5" name="TextBox WhiteBox Tests(failed)" verbose="0">
+    <classes>
+      <class name="bai62.tests.TextBoxWhiteBoxTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testEmptyName_StillAccept"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- bai62.tests.TextBoxWhiteBoxTest -->
+    </classes>
+  </test> <!-- TextBox WhiteBox Tests(failed) -->
+</suite> <!-- Failed suite [Bai6.2 Suite] -->

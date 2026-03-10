@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PhoneValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Bai 6.1 - Phone Validator TDD + JaCoCo</a> &gt; <a href="index.source.html" class="el_package">bai61</a> &gt; <span class="el_source">PhoneValidator.java</span></div><h1>PhoneValidator.java</h1><pre class="source lang-java linenums">package bai61;
+
+<span class="nc" id="L3">public class PhoneValidator {</span>
+
+    public static boolean isValid(String phone) {
+<span class="fc bfc" id="L6" title="All 2 branches covered.">        if (phone == null) {</span>
+<span class="fc" id="L7">            return false;</span>
+        }
+
+        // Chỉ cho phép số, +, space
+<span class="fc" id="L11">        boolean seenPlus = false;</span>
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        for (int i = 0; i &lt; phone.length(); i++) {</span>
+<span class="fc" id="L13">            char c = phone.charAt(i);</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">            if (c == '+') {</span>
+<span class="pc bpc" id="L15" title="2 of 4 branches missed.">                if (i != 0 || seenPlus) {</span>
+<span class="nc" id="L16">                    return false;</span>
+                }
+<span class="fc" id="L18">                seenPlus = true;</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">            } else if (c == ' ') {</span>
+<span class="fc" id="L20">                continue;</span>
+<span class="fc bfc" id="L21" title="All 4 branches covered.">            } else if (c &lt; '0' || c &gt; '9') {</span>
+<span class="fc" id="L22">                return false;</span>
+            }
+        }
+
+        // Bỏ tất cả space
+<span class="fc" id="L27">        String cleaned = phone.replace(&quot; &quot;, &quot;&quot;);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (cleaned.isEmpty()) {</span>
+<span class="fc" id="L29">            return false;</span>
+        }
+
+        // Chuẩn hóa +84... -&gt; 0...
+<span class="fc" id="L33">        String normalized = cleaned;</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (normalized.startsWith(&quot;+84&quot;)) {</span>
+<span class="fc" id="L35">            normalized = &quot;0&quot; + normalized.substring(3);</span>
+        }
+
+        // Kiểm tra chỉ chứa số sau chuẩn hóa
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (int i = 0; i &lt; normalized.length(); i++) {</span>
+<span class="fc" id="L40">            char c = normalized.charAt(i);</span>
+<span class="pc bpc" id="L41" title="2 of 4 branches missed.">            if (c &lt; '0' || c &gt; '9') {</span>
+<span class="nc" id="L42">                return false;</span>
+            }
+        }
+
+        // Phải đúng 10 chữ số, bắt đầu bằng 0
+<span class="pc bpc" id="L47" title="1 of 4 branches missed.">        if (normalized.length() != 10 || normalized.charAt(0) != '0') {</span>
+<span class="fc" id="L48">            return false;</span>
+        }
+
+        // Kiểm tra prefix: 03x, 05x, 07x, 08x, 09x
+<span class="fc" id="L52">        char second = normalized.charAt(1);</span>
+<span class="pc bpc" id="L53" title="2 of 10 branches missed.">        if (second != '3' &amp;&amp; second != '5' &amp;&amp; second != '7'</span>
+                &amp;&amp; second != '8' &amp;&amp; second != '9') {
+<span class="fc" id="L55">            return false;</span>
+        }
+
+<span class="fc" id="L58">        return true;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

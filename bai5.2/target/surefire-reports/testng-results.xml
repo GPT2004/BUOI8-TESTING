@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:07:59 GMT+07:00" name="Bai5.2 Suite" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="49">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:07:59 GMT+07:00" name="VayVon MC/DC Tests" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="49">
+      <class name="bai52.VayVonMCDCTest">
+        <test-method signature="testMCDC_A_DocLap_Tuoi()[pri:0, instance:bai52.VayVonMCDCTest@23282c25]" started-at="2026-03-10T15:07:59 GMT+07:00" name="testMCDC_A_DocLap_Tuoi" description="MC/DC - Điều kiện A độc lập (Row2 vs Row9)" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_A_DocLap_Tuoi -->
+        <test-method signature="testMCDC_B_DocLap_ThuNhap()[pri:0, instance:bai52.VayVonMCDCTest@23282c25]" started-at="2026-03-10T15:07:59 GMT+07:00" name="testMCDC_B_DocLap_ThuNhap" description="MC/DC - Điều kiện B độc lập (Row2 vs Row6)" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_B_DocLap_ThuNhap -->
+        <test-method signature="testMCDC_C_DocLap_TaiSanBaoLanh()[pri:0, instance:bai52.VayVonMCDCTest@23282c25]" started-at="2026-03-10T15:07:59 GMT+07:00" name="testMCDC_C_DocLap_TaiSanBaoLanh" description="MC/DC - Điều kiện C độc lập (Row2 vs Row4)" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_C_DocLap_TaiSanBaoLanh -->
+        <test-method signature="testMCDC_D_DocLap_DiemTinDung()[pri:0, instance:bai52.VayVonMCDCTest@23282c25]" started-at="2026-03-10T15:07:59 GMT+07:00" name="testMCDC_D_DocLap_DiemTinDung" description="MC/DC - Điều kiện D độc lập (Row3 vs Row4)" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_D_DocLap_DiemTinDung -->
+        <test-method signature="testMCDC_TongHop()[pri:0, instance:bai52.VayVonMCDCTest@23282c25]" started-at="2026-03-10T15:07:59 GMT+07:00" name="testMCDC_TongHop" description="MC/DC - Kiểm tra cả tập MC/DC tối thiểu đều đúng" finished-at="2026-03-10T15:07:59 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMCDC_TongHop -->
+      </class> <!-- bai52.VayVonMCDCTest -->
+    </test> <!-- VayVon MC/DC Tests -->
+  </suite> <!-- Bai5.2 Suite -->
+</testng-results>
